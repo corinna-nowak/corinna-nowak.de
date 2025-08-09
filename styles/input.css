@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* WOFF2 subsets (latin + German) */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light-latin.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: optional;
+    unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular-latin.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium-latin.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: optional;
+    unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold-latin.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold-latin.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: optional;
+    unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
+}
+
+/* Metrics-adjusted fallback to reduce CLS before Poppins loads */
+@font-face {
+    font-family: 'Poppins Fallback';
+    src: local('Arial');
+    ascent-override: 92%;
+    descent-override: 24%;
+    line-gap-override: 0%;
+    size-adjust: 105%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure fallback is used consistently */
+:host, html {
+    font-family: 'Poppins', 'Poppins Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}

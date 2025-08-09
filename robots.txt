@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://corinna-nowak.de/sitemap.xml 
