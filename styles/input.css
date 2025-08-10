@@ -4,7 +4,7 @@
     src: url('../fonts/Poppins-Light-latin.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
-    font-display: optional;
+    font-display: swap;
     unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
 }
 
@@ -13,7 +13,7 @@
     src: url('../fonts/Poppins-Regular-latin.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
     unicode-range: U+000-5FF, U+00DF, U+00E4, U+00F6, U+00FC, U+00C4, U+00D6, U+00DC, U+1E9E;
 }
 
